@@ -1,0 +1,90 @@
+// Служебные стили
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--darkblue-06);
+  z-index: 9999;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  .form__item:has(.button) {
+    margin-top: 0;
+  }
+
+  .modal__close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: var(--darkblue);
+    display: block;
+    width: max-content;
+    padding: 10px;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      display: block;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--bluviolet);
+    }
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  &__body {
+    padding: 50px 65px 65px;
+    width: 700px !important;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+  }
+
+  &.active {
+    pointer-events: initial;
+    visibility: visible;
+    opacity: 1;
+  }
+  @media (max-width: 767px) {
+    &__body {
+      width: 100% !important;
+      padding: 34px 30px 30px;
+    }
+  }
+}
+
+// Стилизация контента
+.modal {
+  .form__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form__footer {
+    grid-column: initial;
+    gap: 32px;
+    grid-template-columns: 1fr;
+  }
+  .form .button {
+    margin-left: 0;
+  }
+  .form__item::after {
+    background-color: var(--darkblue-02);
+  }
+}

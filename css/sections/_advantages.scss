@@ -1,0 +1,77 @@
+.advantages {
+  background-color: var(--bluviolet);
+  color: var(--white);
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  &__item {
+    color: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    b {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      display: block;
+      margin-bottom: 6px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &::after {
+        content: "";
+        width: 1px;
+        opacity: 0;
+        height: 1px;
+        background-color: var(--white);
+        transition: opacity 0.3s, color 0.3s, width 0.3s;
+        display: block;
+
+        margin-left: 15px;
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  &__item:hover b::after {
+    width: 80px;
+    opacity: 1;
+  }
+  &__item:last-of-type {
+    b::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    &__list {
+      gap: 37px 32px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 1023px) {
+    &__list {
+      gap: 29px 32px;
+    }
+  }
+  @media (max-width: 767px) {
+    &__list {
+      gap: 29px 15px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 374px) {
+    &__list {
+      gap: 29px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

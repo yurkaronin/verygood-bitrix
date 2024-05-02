@@ -1,0 +1,48 @@
+// Базовые стили
+@import "./base/root";
+@import "./base/fonts";
+@import "./base/global";
+@import "./base/support";
+
+// Блоки
+@import "./blocks/button";
+@import "./blocks/title";
+@import "./blocks/wrapper";
+@import "./blocks/section";
+@import "./blocks/video-bg";
+@import "./blocks/service-card";
+@import "./blocks/accordion";
+
+// Смысловые секции
+@import "./sections/header";
+
+@import "./sections/main";
+@import "./sections/advantages";
+@import "./sections/services";
+@import "./sections/faq";
+@import "./sections/hero";
+@import "./sections/prices";
+@import "./sections/form";
+@import "./sections/content";
+@import "./sections/contact-form";
+
+@import "./sections/footer";
+
+@import "./sections/modal";
+
+
+// Активности
+@import "./activity/header-sticky";
+@import "./activity/modal-open";
+
+// Страницы
+@import "./pages/inner-page";
+
+// эффекты
+@import "./effects/click";
+
+
+// @media (max-width: 1280px) {}
+// @media (max-width: 1023px) {}
+// @media (max-width: 767px) {}
+// @media (max-width: 374px) {}

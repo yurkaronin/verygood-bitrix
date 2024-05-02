@@ -1,0 +1,93 @@
+.header {
+  padding-top: 48px;
+  padding-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  z-index: 10;
+  color: var(--white);
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, padding 0.3s;
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: block;
+    text-decoration: none;
+    margin-right: auto;
+    color: inherit;
+    max-width: max-content;
+    transition: color 0.3s, scale 0.6s;
+    svg {
+      width: 48px;
+      height: 48px;
+      display: block;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--green);
+      scale: 1.05;
+    }
+  }
+  &__phone {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: inherit;
+    margin-right: 16px;
+    margin-left: 16px;
+    max-width: max-content;
+    transition: color 0.3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--green);
+    }
+  }
+  &__buttons {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, auto);
+    max-width: max-content;
+  }
+  .button {
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+
+  @media (max-width: 1023px) {
+    &__buttons {
+      gap: 8px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    &__logo {
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &__phone {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 374px) {
+    &__phone {
+      margin-right: 6px;
+      margin-left: 6px;
+      font-size: 14px;
+    }
+  }
+}

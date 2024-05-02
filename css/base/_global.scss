@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+html *,
+html *::before,
+html *::after {
+  box-sizing: border-box;
+}
+
+input {
+  background: none;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.33;
+  // color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-size: 18px;
+  font-family: var(--font-family);
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--white);
+  color: var(--darkblue);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 133%;
+  min-height: 100%;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+  overflow: auto;
+}
+
+
+td,
+th {
+  border: 1px solid var(--darkblue);
+  padding: 16px 12px;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
+}
+
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  h4 {
+    font-size: 1.3em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  h6 {
+    font-size: 1.1em;
+  }
+}

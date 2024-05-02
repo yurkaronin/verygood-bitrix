@@ -1,0 +1,16 @@
+.prices {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 42px 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
