@@ -12,6 +12,7 @@
       height: 50px;
     }
   }
+
   &__name {
     display: block;
     margin: 0;
@@ -19,6 +20,7 @@
     padding-bottom: 16px;
     margin-bottom: 20px;
     position: relative;
+
     &::after {
       content: "";
       width: 48px;
@@ -32,12 +34,14 @@
       display: block;
     }
   }
+
   &__description {
     margin: 0;
     margin-bottom: 28px;
     opacity: 0.8;
     text-wrap: balance;
   }
+
   &__label {
     display: block;
     margin: 0;
@@ -47,6 +51,7 @@
     opacity: 0.5;
     margin-bottom: 6px;
   }
+
   &__price {
     display: block;
     margin: 0;

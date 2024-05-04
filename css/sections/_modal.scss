@@ -1,10 +1,7 @@
 // Служебные стили
 .modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -17,9 +14,9 @@
   z-index: 9999;
   transition: opacity 0.3s, visibility 0.3s;
 
-  .form__item:has(.button) {
-    margin-top: 0;
-  }
+  // .form__item:has(.button) {
+  //   margin-top: 0;
+  // }
 
   .modal__close {
     position: absolute;
@@ -39,6 +36,7 @@
       height: 18px;
       display: block;
     }
+
     &:hover,
     &:active,
     &:focus {
@@ -63,27 +61,31 @@
     visibility: visible;
     opacity: 1;
   }
-  @media (max-width: 767px) {
+
+  @media (width <=767px) {
     &__body {
       width: 100% !important;
       padding: 34px 30px 30px;
     }
   }
-}
 
-// Стилизация контента
-.modal {
+
+  // Стилизация контента
+
   .form__grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .form__footer {
     grid-column: initial;
     gap: 32px;
     grid-template-columns: 1fr;
   }
+
   .form .button {
     margin-left: 0;
   }
+
   .form__item::after {
     background-color: var(--darkblue-02);
   }

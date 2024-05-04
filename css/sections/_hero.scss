@@ -2,13 +2,12 @@
   min-height: 100vh;
   background-color: var(--darkblue);
   color: var(--white);
-  background-image: url(../img/hero.jpg);
+  background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 120px;
   padding-bottom: 50px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,11 +21,9 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: linear-gradient(
-      90deg,
-      rgba(19, 23, 48, 0.5),
-      rgba(19, 23, 48, 0.5)
-    );
+    background: linear-gradient(90deg,
+        rgb(19 23 48 / 50%),
+        rgb(19 23 48 / 50%));
   }
 
   &__content {
@@ -36,6 +33,7 @@
     position: relative;
     z-index: 2;
   }
+
   .title {
     font-size: 80px;
     line-height: 110%;
@@ -43,42 +41,49 @@
     margin-bottom: 7px;
     text-wrap: balance;
   }
+
   .text {
     margin: 0;
     color: var(--white-07);
     margin-bottom: 35px;
+
     b {
       color: var(--white);
       font-weight: 500;
     }
   }
 
-  @media (max-width: 1280px) {
+  @media (width <= 1280px) {
     &__content {
       max-width: 688px;
     }
+
     .title {
       font-size: 64px;
       margin-bottom: 16px;
     }
   }
 
-  @media (max-width: 1023px) {
+  @media (width <= 1023px) {
     &__content {
       max-width: 448px;
     }
+
     .title {
       font-size: 48px;
       margin-bottom: 10px;
     }
+
     .text {
       margin-bottom: 27px;
     }
   }
-  @media (max-width: 767px) {
+
+  @media (width <= 767px) {
     padding-top: 90px;
     justify-content: flex-end;
     text-align: center;
+
     &__content {
       max-width: initial;
       display: flex;
@@ -86,10 +91,12 @@
       align-items: center;
       justify-content: flex-end;
     }
+
     .title {
       font-size: 32px;
       margin-bottom: 14px;
     }
+
     .text {
       margin-bottom: 23px;
     }
