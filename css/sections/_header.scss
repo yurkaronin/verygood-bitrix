@@ -1,12 +1,16 @@
 .header {
-  padding-top: 48px;
-  padding-bottom: 20px;
   position: fixed;
+  z-index: 10;
   width: 100%;
   max-width: 100%;
-  z-index: 10;
+  padding-top: 48px;
+  padding-bottom: 20px;
   color: var(--white);
-  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, padding 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s,
+    box-shadow 0.3s,
+    padding 0.3s;
 
   &__flex {
     display: flex;
@@ -17,16 +21,18 @@
 
   &__logo {
     display: block;
-    text-decoration: none;
+    max-width: max-content;
     margin-right: auto;
     color: inherit;
-    max-width: max-content;
-    transition: color 0.3s, scale 0.6s;
+    transition:
+      color 0.3s,
+      scale 0.6s;
+    text-decoration: none;
 
     svg {
+      display: block;
       width: 48px;
       height: 48px;
-      display: block;
     }
 
     &:hover,
@@ -39,14 +45,14 @@
 
   &__phone {
     display: block;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
-    color: inherit;
+    max-width: max-content;
     margin-right: 16px;
     margin-left: 16px;
-    max-width: max-content;
+    font-size: 16px;
+    font-weight: 700;
+    color: inherit;
     transition: color 0.3s;
+    text-decoration: none;
 
     &:hover,
     &:focus,
@@ -64,9 +70,9 @@
 
   .button {
     height: 48px;
-    font-weight: 500;
-    font-size: 16px;
     padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 500;
   }
 
   @media (width <= 1023px) {

@@ -1,21 +1,23 @@
 .footer {
-  background-color: var(--darkblue);
-  color: var(--white);
+  position: relative;
   padding-top: 16px;
   padding-bottom: 12px;
-  position: relative;
+  color: var(--white);
+  background-color: var(--darkblue);
 
   &::after {
-    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     display: block;
     width: 100%;
     height: 1px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
+    transition:
+      background-color 0.3s,
+      height 0.3s;
+    content: '';
     background-color: var(--white-02);
-    transition: background-color .3s, height .3s;
   }
 
   &__text {
@@ -24,7 +26,6 @@
     opacity: 0.4;
     line-height: 1.3;
   }
-
 
   a {
     color: var(--green);

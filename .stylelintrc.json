@@ -1,6 +1,6 @@
 {
   "extends": "stylelint-config-standard-scss",
-  "plugins": ["stylelint-scss"],
+  "plugins": ["stylelint-scss", "stylelint-order"],
   "rules": {
     "no-duplicate-selectors": true,
     "selector-class-pattern": [
@@ -10,6 +10,50 @@
       }
     ],
     "scss/dollar-variable-pattern": "^\\$[a-z0-9-]+$",
-    "scss/selector-no-redundant-nesting-selector": true
+    "scss/selector-no-redundant-nesting-selector": true,
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-order": [
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "z-index",
+
+      "display",
+      "float",
+      "width",
+      "height",
+      "max-width",
+      "max-height",
+      "min-width",
+      "min-height",
+      "padding",
+      "margin",
+      "margin-top",
+      "margin-right",
+      "margin-bottom",
+      "margin-left",
+      "padding-top",
+      "padding-right",
+      "padding-bottom",
+      "padding-left",
+
+      "font-size",
+      "font-family",
+      "font-weight",
+      "line-height",
+      "text-align",
+
+      "background",
+      "color",
+      "border",
+      "border-radius",
+
+      "transition",
+      "animation",
+
+      "cursor"
+    ]
   }
 }

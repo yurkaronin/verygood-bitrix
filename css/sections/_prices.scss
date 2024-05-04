@@ -1,9 +1,9 @@
 .prices {
   &__list {
-    list-style: none;
+    display: grid;
     padding: 0;
     margin: 0;
-    display: grid;
+    list-style: none;
     gap: 42px 32px;
     grid-template-columns: repeat(2, 1fr);
   }

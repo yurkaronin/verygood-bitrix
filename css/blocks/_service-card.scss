@@ -4,7 +4,9 @@
     width: 50px;
     margin-bottom: 16px;
     color: var(--green);
-    transition: transform 0.3s, color 0.3s;
+    transition:
+      transform 0.3s,
+      color 0.3s;
 
     svg {
       display: block;
@@ -14,24 +16,27 @@
   }
 
   &__name {
+    position: relative;
     display: block;
     margin: 0;
-    font-size: 20px;
-    padding-bottom: 16px;
     margin-bottom: 20px;
-    position: relative;
+    padding-bottom: 16px;
+    font-size: 20px;
 
     &::after {
-      content: "";
-      width: 48px;
-      height: 1px;
       position: absolute;
       bottom: 0;
       left: 0;
-      background: var(--darkblue);
-      opacity: 0.2;
-      transition: opacity 0.3s, color 0.3s, width 0.3s;
       display: block;
+      width: 48px;
+      height: 1px;
+      background: var(--darkblue);
+      transition:
+        opacity 0.3s,
+        color 0.3s,
+        width 0.3s;
+      content: '';
+      opacity: 0.2;
     }
   }
 
@@ -45,19 +50,19 @@
   &__label {
     display: block;
     margin: 0;
-    font-weight: 400;
+    margin-bottom: 6px;
     font-size: 14px;
+    font-weight: 400;
     color: var(--darkblue);
     opacity: 0.5;
-    margin-bottom: 6px;
   }
 
   &__price {
     display: block;
     margin: 0;
     margin-bottom: 27px;
-    font-weight: 700;
     font-size: 40px;
+    font-weight: 700;
     line-height: 1;
     color: var(--darkblue);
   }
