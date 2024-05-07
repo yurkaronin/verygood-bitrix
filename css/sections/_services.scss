@@ -9,6 +9,7 @@
     list-style: none;
     gap: 34px 32px;
     grid-template-columns: repeat(4, 1fr);
+    left: 0;
   }
 
   &__item {
@@ -18,7 +19,7 @@
     text-wrap: balance;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 1px;
       left: 0;
