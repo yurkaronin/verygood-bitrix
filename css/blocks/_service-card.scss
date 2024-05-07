@@ -35,7 +35,7 @@
         opacity 0.3s,
         color 0.3s,
         width 0.3s;
-      content: '';
+      content: "";
       opacity: 0.2;
     }
   }
@@ -75,5 +75,11 @@
     width: 80px;
     background: var(--bluviolet);
     opacity: 1;
+  }
+  @media (max-width: 767px) {
+    &__price {
+      margin-bottom: 12px;
+      font-size: 30px;
+    }
   }
 }

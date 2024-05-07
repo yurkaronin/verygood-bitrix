@@ -427,6 +427,12 @@ input[type=radio].visually-hidden {
   background: var(--bluviolet);
   opacity: 1;
 }
+@media (max-width: 767px) {
+  .service-card__price {
+    margin-bottom: 12px;
+    font-size: 30px;
+  }
+}
 
 .accordion {
   padding: 24px 0;
