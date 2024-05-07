@@ -3,16 +3,16 @@
   max-width: calc(1600px - 48px - 48px);
   margin: 0 auto;
 
-  @media (width <= 1600px) {
+  @media (max-width: 1600px) {
     max-width: calc(100% - 48px - 48px);
     padding: 0;
   }
 
-  @media (width <= 767px) {
+  @media (max-width: 767px) {
     max-width: calc(100% - 20px - 20px);
   }
 
-  @media (width <= 374px) {
+  @media (max-width: 374px) {
     max-width: calc(100% - 10px - 10px);
   }
 }

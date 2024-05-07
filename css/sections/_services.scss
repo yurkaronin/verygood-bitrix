@@ -55,13 +55,13 @@
     color: var(--bluviolet);
   }
 
-  @media (width <= 1023px) {
+  @media (max-width: 1023px) {
     &__list {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
-  @media (width <= 767px) {
+  @media (max-width: 767px) {
     &__list {
       gap: 36px 15px;
       grid-template-columns: repeat(2, 1fr);
@@ -74,7 +74,7 @@
     }
   }
 
-  @media (width <= 374px) {
+  @media (max-width: 374px) {
     &__list {
       grid-template-columns: repeat(1, 1fr);
     }

@@ -8,7 +8,7 @@
     color: var(--green);
   }
 
-  @media (width <= 767px) {
+  @media (max-width: 767px) {
     font-size: 24px;
   }
 }
