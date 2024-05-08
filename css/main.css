@@ -45,6 +45,7 @@ html {
           box-sizing: border-box;
   scroll-behavior: smooth;
   height: 100%;
+  scrollbar-gutter: stable;
 }
 
 html *,
@@ -720,7 +721,6 @@ input[type=radio].visually-hidden {
   list-style: none;
   gap: 34px 32px;
   grid-template-columns: repeat(4, 1fr);
-  list-style: none;
 }
 .services__item {
   position: relative;
@@ -1292,6 +1292,8 @@ input[type=radio].visually-hidden {
 
 .modal-open {
   overflow: hidden;
+}
+.modal-open .header {
   margin-right: 17px;
 }
 
