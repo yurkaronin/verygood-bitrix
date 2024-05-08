@@ -55,7 +55,7 @@
     }
   }
 
-  @media (width <= 1280px) {
+  @media (max-width: 1280px) {
     &__content {
       max-width: 688px;
     }
@@ -66,7 +66,7 @@
     }
   }
 
-  @media (width <= 1023px) {
+  @media (max-width: 1023px) {
     &__content {
       max-width: 448px;
     }
@@ -81,7 +81,7 @@
     }
   }
 
-  @media (width <= 767px) {
+  @media (max-width: 767px) {
     padding-top: 90px;
     justify-content: flex-end;
     text-align: center;

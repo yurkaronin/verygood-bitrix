@@ -75,13 +75,13 @@
     font-weight: 500;
   }
 
-  @media (width <= 1023px) {
+  @media (max-width: 1023px) {
     &__buttons {
       gap: 8px;
     }
   }
 
-  @media (width <= 767px) {
+  @media (max-width: 767px) {
     padding-top: 20px;
 
     &__logo {
@@ -97,7 +97,7 @@
     }
   }
 
-  @media (width <= 374px) {
+  @media (max-width: 374px) {
     &__phone {
       margin-right: 6px;
       margin-left: 6px;

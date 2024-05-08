@@ -202,7 +202,7 @@
     opacity: 1;
   }
 
-  @media (width <=1023px) {
+  @media (max-width: 1023px) {
     &__grid {
       display: block;
     }
@@ -212,7 +212,7 @@
     }
   }
 
-  @media (width <=767px) {
+  @media (max-width: 767px) {
     font-size: 20px;
 
     &__footer {

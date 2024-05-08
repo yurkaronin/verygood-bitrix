@@ -57,27 +57,27 @@
     }
   }
 
-  @media (width <= 1280px) {
+  @media (max-width: 1280px) {
     &__list {
       gap: 37px 32px;
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
-  @media (width <= 1023px) {
+  @media (max-width: 1023px) {
     &__list {
       gap: 29px 32px;
     }
   }
 
-  @media (width <= 767px) {
+  @media (max-width: 767px) {
     &__list {
       gap: 29px 15px;
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media (width <= 374px) {
+  @media (max-width: 374px) {
     &__list {
       gap: 29px;
       grid-template-columns: repeat(1, 1fr);
