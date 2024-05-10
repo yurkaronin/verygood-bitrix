@@ -16,10 +16,6 @@
   pointer-events: none;
   background-color: var(--darkblue-06);
 
-  // .form__item:has(.button) {
-  //   margin-top: 0;
-  // }
-
   .modal__close {
     position: absolute;
     top: 6px;
@@ -53,7 +49,7 @@
   &__body {
     position: relative;
     width: 700px !important;
-    padding: 50px 65px 65px;
+    padding: 50px 65px 45px;
     margin: 0 auto;
     background: #fff;
   }
