@@ -9,15 +9,15 @@
   <meta name="format-detection" content="date=no">
   <meta name="format-detection" content="address=no">
   <meta name="format-detection" content="email=no">
-
+  <!-- SEO  -->
   <title>Техническая поддержка сайтов на 1C Битрикс</title>
   <meta name="description"
     content="VERY-GOOD: Техническая поддержка сайтов на 1C Битрикс. Учебный проект
   разработанный в рамках прохождения обучающего курса по вёрстке. Все права на макет принадлежат компании very-good.ru">
   <meta name="keywords" content="Техническая поддержка, Битрикс, Bitrix, поддержка сайта, Very Good, Веригуд">
-
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
+  <!-- Стили  -->
   <link rel="stylesheet" href="./libs/normalize.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -55,7 +55,7 @@
       </div>
     </div>
   </header>
-
+  <!-- Основной контент  -->
   <main class="main">
 
     <!-- Первый экран  -->
@@ -312,75 +312,77 @@
       </div>
     </section>
 
+    <!-- Форма обратной связи  -->
+    <section class="contact-form section" id="discuss-details">
+      <div class="wrapper">
+        <!-- типовая грид сетка  -->
+        <div class="section__grid">
+
+          <!-- обёртка левой колонки сетки  -->
+          <div class="section__grid-item">
+
+            <!-- типовой заголовок  -->
+            <h2 class="title">Обсудить детали</h2>
+          </div>
+
+          <!-- обёртка правой колонки сетки  -->
+          <div class="section__grid-item">
+            <!-- форма обратной связи  -->
+            <form class="form" action="./submit-form.php" method="post">
+
+              <!-- Скрытое поле  -->
+              <input type="hidden" value="ОБСУДИТЬ ДЕТАЛИ" name="form-type">
+              <!-- грид сетка формы  -->
+              <div class="form__grid">
+
+                <!-- элемент сетки формы  -->
+                <div class="form__item form__item--big">
+                  <label for="discuss-user-name">Как вас зовут:</label>
+                  <input type="text" placeholder="Ваше имя" id="discuss-user-name" name="user-name">
+                </div>
+
+                <!-- элемент сетки формы  -->
+                <div class="form__item">
+                  <label for="discuss-user-mail">E-mail:</label>
+                  <input type="email" placeholder="Электронная почта" id="discuss-user-mail" name="user-mail">
+                </div>
+
+                <!-- элемент сетки формы  -->
+                <div class="form__item">
+                  <label for="discuss-user-phone">Телефон:</label>
+                  <input type="tel" placeholder="Ваш телефон" id="discuss-user-phone" name="user-phone" required>
+                  <span class="form__error-message">Неверный формат номера</span>
+                </div>
+
+                <!-- элемент сетки формы  -->
+                <div class="form__item form__item--big">
+                  <label for="discuss-user-text">Комментарий:</label>
+                  <textarea name="user-text" placeholder="Ваш комментарий" id="discuss-user-text"></textarea>
+                </div>
+
+                <!-- нижний элемент сетки формы  -->
+                <div class="form__footer">
+                  <div class="form__agree">
+
+                    <input class="visually-hidden" type="checkbox" name="user-agree" id="discuss-user-agree" checked
+                      required>
+                    <label for="discuss-user-agree">Даю согласие на обработку <a href="./data-processing-policy.html"
+                        target="_blank">персональных данных</a></label>
+                  </div>
+                  <button class="button click" type="submit"><span>Отправить</span></button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-  <section class="contact-form section" id="discuss-details">
-    <div class="wrapper">
-      <!-- типовая грид сетка  -->
-      <div class="section__grid">
-
-        <!-- обёртка левой колонки сетки  -->
-        <div class="section__grid-item">
-
-          <!-- типовой заголовок  -->
-          <h2 class="title">Обсудить детали</h2>
-        </div>
-
-        <!-- обёртка правой колонки сетки  -->
-        <div class="section__grid-item">
-          <!-- форма обратной связи  -->
-          <form class="form" action="./submit-form.php" method="post">
-
-            <!-- Скрытое поле  -->
-            <input type="hidden" value="ОБСУДИТЬ ДЕТАЛИ" name="form-type">
-            <!-- грид сетка формы  -->
-            <div class="form__grid">
-
-              <!-- элемент сетки формы  -->
-              <div class="form__item form__item--big">
-                <label for="discuss-user-name">Как вас зовут:</label>
-                <input type="text" placeholder="Ваше имя" id="discuss-user-name" name="user-name">
-              </div>
-
-              <!-- элемент сетки формы  -->
-              <div class="form__item">
-                <label for="discuss-user-mail">E-mail:</label>
-                <input type="email" placeholder="Электронная почта" id="discuss-user-mail" name="user-mail">
-              </div>
-
-              <!-- элемент сетки формы  -->
-              <div class="form__item">
-                <label for="discuss-user-phone">Телефон:</label>
-                <input type="tel" placeholder="Ваш телефон" id="discuss-user-phone" name="user-phone" required>
-                <span class="form__error-message">Неверный формат номера</span>
-              </div>
-
-              <!-- элемент сетки формы  -->
-              <div class="form__item form__item--big">
-                <label for="discuss-user-text">Комментарий:</label>
-                <textarea name="user-text" placeholder="Ваш комментарий" id="discuss-user-text"></textarea>
-              </div>
-
-              <!-- нижний элемент сетки формы  -->
-              <div class="form__footer">
-                <div class="form__agree">
-
-                  <input class="visually-hidden" type="checkbox" name="user-agree" id="discuss-user-agree" checked
-                    required>
-                  <label for="discuss-user-agree">Даю согласие на обработку <a href="./data-processing-policy.html"
-                      target="_blank">персональных данных</a></label>
-                </div>
-                <button class="button click" type="submit"><span>Отправить</span></button>
-              </div>
-            </div>
-
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- копирайт  -->
+  <!-- Подвал  -->
   <footer class="footer">
     <div class="wrapper">
       <p class="footer__text">© 2024 "VERY-GOOD: Техническая поддержка сайтов на 1C Битрикс". Учебный проект
@@ -392,7 +394,7 @@
     </div>
   </footer>
 
-  <!-- Бесплатная консультация -->
+  <!-- Диалоговое окно Бесплатная консультация -->
   <section class="modal section" id="modal-free-consultation">
 
     <div class="wrapper">
@@ -449,14 +451,14 @@
     </div>
   </section>
 
-
-
+  <!-- Библиотека для валлидации полей ввода  -->
   <script src="./libs/imask.js"></script>
 
   <script src="./js/parts/sticky-header.js"></script>
   <script src="./js/parts/modals.js"></script>
   <script src="./js/parts/form-validation.js"></script>
   <script src="./js/parts/faq-accordion.js"></script>
+
   <script src="./js/main.js"></script>
 </body>
 
