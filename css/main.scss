@@ -12,19 +12,23 @@
 @import "./blocks/video-bg";
 @import "./blocks/service-card";
 @import "./blocks/accordion";
+@import "./blocks/form";
 
 // Смысловые секции
+
+//   Главная страница
 @import "./sections/header";
+@import "./sections/hero";
 @import "./sections/advantages";
 @import "./sections/services";
-@import "./sections/faq";
-@import "./sections/hero";
 @import "./sections/prices";
-@import "./sections/form";
-@import "./sections/content";
+@import "./sections/faq";
 @import "./sections/contact-form";
 @import "./sections/footer";
 @import "./sections/modal";
+
+//   Внутренняя страница
+@import "./sections/content";
 
 // Активности
 @import "./activity/header-sticky";
