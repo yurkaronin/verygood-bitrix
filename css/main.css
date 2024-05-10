@@ -267,9 +267,6 @@ input[type=radio].visually-hidden {
     height: 40px;
     padding: 8px;
   }
-  .button--social svg {
-    scale: 0.8;
-  }
 }
 
 .title {
@@ -295,7 +292,6 @@ input[type=radio].visually-hidden {
 @media (max-width: 1600px) {
   .wrapper {
     max-width: calc(100% - 48px - 48px);
-    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -767,6 +763,11 @@ input[type=radio].visually-hidden {
     margin-right: 6px;
     margin-left: 6px;
     font-size: 14px;
+  }
+  .header .button {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
   }
 }
 
