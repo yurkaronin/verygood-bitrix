@@ -26,7 +26,7 @@
     width: 10px;
     height: 15px;
     margin-left: 16px;
-    content: '';
+    content: "";
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.5 13L7.5 7L1.5 1' stroke='white' stroke-width='2' /%3e%3c/svg%3e");
     background-size: contain;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@
     height: 100%;
     background: rgb(19 23 48 / 25%);
     transition: opacity 0.3s;
-    content: '';
+    content: "";
     pointer-events: none;
     opacity: 0;
   }
