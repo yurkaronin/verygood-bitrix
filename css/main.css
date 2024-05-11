@@ -7,6 +7,7 @@
   --darkblue: #131730;
   --darkblue-02: rgba(19, 23, 48, 0.2);
   --darkblue-06: rgba(19, 23, 48, 0.6);
+  --darkblue-08: rgba(19, 23, 48, 0.8);
   --bg: #f2f6f9;
   --bluviolet: #5b48fc;
   --green: #9de311;
@@ -64,7 +65,7 @@ body {
   font-family: var(--font-family);
   font-weight: 300;
   line-height: 133%;
-  color: var(--darkblue);
+  color: var(--darkblue-08);
   overflow-x: hidden;
   background-color: var(--white);
   font-style: normal;
@@ -101,6 +102,7 @@ h4,
 h5,
 h6 {
   line-height: 1.4;
+  color: var(--darkblue);
 }
 
 @media (max-width: 767px) {
