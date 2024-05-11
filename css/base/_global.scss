@@ -11,16 +11,6 @@ html *::after {
   box-sizing: border-box;
 }
 
-input {
-  display: flex;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.33;
-  background: none;
-  border: none;
-  align-items: center;
-}
-
 body {
   position: relative;
   min-width: 320px;
