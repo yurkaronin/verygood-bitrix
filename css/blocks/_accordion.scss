@@ -25,6 +25,10 @@
     list-style: none;
     align-items: center;
 
+    &::-webkit-details-marker {
+      display: none;
+    }
+
     &::after {
       display: block;
       width: 27px;

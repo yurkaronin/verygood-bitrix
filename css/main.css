@@ -454,6 +454,9 @@ input[type=radio].visually-hidden {
       -ms-flex-align: center;
           align-items: center;
 }
+.accordion__head::-webkit-details-marker {
+  display: none;
+}
 .accordion__head::after {
   display: block;
   width: 27px;
